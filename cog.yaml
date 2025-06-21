@@ -4,9 +4,8 @@ build:
   python_version: "3.10"
   python_requirements: "requirements.txt"
   run:
-    - apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends curl libegl1-mesa-dev libglib2.0-0 libeigen3-dev libcgal-dev libxi6 libgconf-2-4 libxkbcommon-x11-0 libsm6 libxext6 libxrender-dev libglvnd0 libgl1 libglx0 libegl1 libgles2 libglvnd-dev libgl1-mesa-dev libegl1-mesa-dev libgles2-mesa-dev mesa-utils-extra libxrender1 && curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.8.2/pget_linux_x86_64" && chmod +x /usr/local/bin/pget && pip install hf-xet && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && pip cache purge
-
-environment:
-    - "PYOPENGL_PLATFORM=egl"
+    - apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libegl1-mesa-dev libglib2.0-0 libeigen3-dev libcgal-dev libxi6 libgconf-2-4 libxkbcommon-x11-0 libsm6 libxext6 libxrender-dev libglvnd0 libgl1 libglx0 libegl1 libgles2 libglvnd-dev libgl1-mesa-dev libegl1-mesa-dev libgles2-mesa-dev mesa-utils-extra libxrender1 && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    - mkdir -p /root/.cache/hy3dpaint/ckpt && curl -o /root/.cache/hy3dpaint/ckpt/RealESRGAN_x4plus.pth -L "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth"
+    - mkdir -p /root/.u2net/ && curl -o /root/.u2net/u2net.onnx -L "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx"
 
 predict: "predict.py:Predictor"
