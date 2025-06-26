@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
+
 
 # Distribution / packaging
 .Python
@@ -183,3 +183,4 @@ demo_untextured.glb
 white_mesh_remesh.obj
 hy3dpaint/ckpt/
 
+.cog/

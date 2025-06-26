@@ -1,16 +1,18 @@
---extra-index-url https://mirrors.cloud.tencent.com/pypi/simple/
---extra-index-url https://mirrors.aliyun.com/pypi/simple
+--extra-index-url https://download.pytorch.org/whl/cu124
 
 # Build Tools
 ninja==1.11.1.1
 pybind11==2.13.4
 
 # Core ML/Deep Learning
+huggingface-hub
+hf-xet
+torch==2.5.1
+torchvision==0.20.1
 transformers==4.46.0
 diffusers==0.30.0
 accelerate==1.1.1
 pytorch-lightning==1.9.5
-huggingface-hub==0.30.2
 safetensors==0.4.4
 
 # Scientific Computing
@@ -41,9 +43,9 @@ pyyaml==6.0.2
 configargparse==1.7
 
 # Web Framework (for demo)
-gradio==5.33.0
-fastapi==0.115.12
-uvicorn==0.34.3
+# gradio==5.33.0
+# fastapi==0.115.12
+# uvicorn==0.34.3
 
 # Utilities
 tqdm==4.66.5
@@ -65,4 +67,8 @@ timm
 pythreejs
 torchdiffeq
 deepspeed
+
+# Custom CUDA wheels built with wheels-builder/build-wheels.sh
+https://github.com/ndreca/Hunyuan3D-2.1/raw/main/wheels-builder/custom_rasterizer-0.1-cp310-cp310-linux_x86_64.whl
+# Note: mesh_inpaint_processor.so is compiled in place and committed to repo
 

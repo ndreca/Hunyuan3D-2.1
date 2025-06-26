@@ -1,0 +1,19 @@
+# Minimal requirements for building wheels
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+# Core build tools
+pybind11==2.13.4
+wheel
+setuptools
+ninja==1.11.1.1
+
+# Same versions as working Hunyuan3D-2
+torch
+torchvision
+numpy>=1.21.0,<2.0
+scipy>=1.10.0
+
+# Essential dependencies for compilation
+opencv-python-headless>=4.8.0
+pygltflib>=1.16.0
+trimesh>=4.0.0 
