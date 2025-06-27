@@ -27,7 +27,7 @@ from hy3dshape.utils import logger
 from hy3dpaint.textureGenPipeline import Hunyuan3DPaintPipeline, Hunyuan3DPaintConfig
 from hy3dpaint.convert_utils import create_glb_with_pbr_materials
 
-HUNYUAN3D_REPO = "tencent/Hunyuan3D-2.1"
+HUNYUAN3D_REPO = "andreca/hunyuan3d-2.1xet"
 HUNYUAN3D_DIT_MODEL = "hunyuan3d-dit-v2-1"
 REALESRGAN_PATH = "/root/.cache/hy3dpaint/ckpt/RealESRGAN_x4plus.pth"
 
@@ -50,6 +50,7 @@ class Predictor(BasePredictor):
             
             conf = Hunyuan3DPaintConfig(max_num_view=8, resolution=768)
             conf.realesrgan_ckpt_path = REALESRGAN_PATH
+            conf.multiview_pretrained_path = HUNYUAN3D_REPO
             conf.multiview_cfg_path = "hy3dpaint/cfgs/hunyuan-paint-pbr.yaml"
             conf.custom_pipeline = "hy3dpaint/hunyuanpaintpbr"
             self.texgen_worker = Hunyuan3DPaintPipeline(conf)
