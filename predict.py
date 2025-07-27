@@ -78,8 +78,7 @@ class Predictor(BasePredictor):
     def predict(
         self,
         image: Path = Input(
-            description="Input image for generating 3D shape",
-            default=None
+            description="Input image for generating 3D shape"
         ),
         steps: int = Input(
             description="Number of inference steps",

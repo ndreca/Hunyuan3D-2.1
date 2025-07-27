@@ -1,4 +1,5 @@
 build:
+  cog_runtime: true
   gpu: true
   cuda: "12.4"
   python_version: "3.10"
