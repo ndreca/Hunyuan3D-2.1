@@ -36,7 +36,8 @@
 ## 🤗 Community Contribution Leaderboard
 1. By [@visualbruno](https://github.com/visualbruno)
   - ComfyUI-Hunyuan3d-2-1: https://github.com/visualbruno/ComfyUI-Hunyuan3d-2-1
-
+2. By [@VR-Jobs](https://github.com/VR-Jobs)
+  - Hunyuan3d-2-1 Unity Support: https://github.com/VR-Jobs/Hunyuan3D-2.1-Unity-XR-PC-Phone
 
 ## ☯️ **Hunyuan3D 2.1**
 
@@ -82,7 +83,7 @@ It takes 10 GB VRAM for shape generation, 21GB for texture generation and 29GB f
 | Model                      | Description                 | Date       | Size | Huggingface                                                                               |
 |----------------------------|-----------------------------|------------|------|-------------------------------------------------------------------------------------------| 
 | Hunyuan3D-Shape-v2-1         | Image to Shape Model        | 2025-06-14 | 3.3B | [Download](https://huggingface.co/tencent/Hunyuan3D-2.1/tree/main/hunyuan3d-dit-v2-1)         |
-| Hunyuan3D-Paint-v2-1       | Texture Generation Model    | 2025-06-14 | 2B | [Download](https://huggingface.co/tencent/Hunyuan3D-2.1/tree/main/hunyuan3d-paint-v2-1)       |
+| Hunyuan3D-Paint-v2-1       | Texture Generation Model    | 2025-06-14 | 2B | [Download](https://huggingface.co/tencent/Hunyuan3D-2.1/tree/main/hunyuan3d-paintpbr-v2-1)       |
 
 
 ## 🤗 Get Started with Hunyuan3D 2.1
