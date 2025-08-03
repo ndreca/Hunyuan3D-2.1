@@ -24,6 +24,7 @@
 
 ## 🔥 News
 
+- Jul 26, 2025: 🤗 We release the first open-source, simulation-capable, immersive 3D world generation model, [HunyuanWorld-1.0](https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0)!
 - Jun 19, 2025: 👋 We present the [technical report](https://arxiv.org/pdf/2506.15442) of Hunyuan3D-2.1, please check out the details and spark some discussion!
 - Jun 13, 2025: 🤗 We release the first production-ready 3D asset generation model, Hunyuan3D-2.1!
 
@@ -91,7 +92,7 @@ It takes 10 GB VRAM for shape generation, 21GB for texture generation and 29GB f
 Hunyuan3D 2.1 supports Macos, Windows, Linux. You may follow the next steps to use Hunyuan3D 2.1 via:
 
 ### Install Requirements
-We test our model on an A100 GPU with Python 3.10 and PyTorch 2.5.1+cu124.
+We test our model with Python 3.10 and PyTorch 2.5.1+cu124.
 ```bash
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
 pip install -r requirements.txt
